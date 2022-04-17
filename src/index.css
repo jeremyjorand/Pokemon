@@ -11,3 +11,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main {
+  background-color: red;
+  width: 100vw;
+  height: 100vh;
+  display:flex;
+}
+
+.detail {
+  width: 70vw;
+  height: 100vh;
+  background-color: #EEE;
+}
+
+.liste {
+  width: 30vw;
+  height: 100vh;
+  background-color: green;
+  overflow-y: scroll;
+}
+
+.liste ul{
+  width:100%;
+  padding:0;
+  margin:0;
+}
+.liste  li{
+  list-style: none;
+  width:100%;
+  background-color:white;
+  cursor: pointer;
+  padding:5px 10px;
+}
+.liste li:nth-child(even) {
+background-color: #CCCCCC;
+}
+.liste li:hover {
+  background-color: #777777;
+}
