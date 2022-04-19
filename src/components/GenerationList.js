@@ -5,12 +5,14 @@ const GenerationList = (props) => {
     const generationList = props.generationList;
     const setPokemonList = props.setPokemonList;
     const setPokemonSaveList = props.setPokemonSaveList;
+    const setCurrentPokemon = props.setCurrentPokemon;
 
     const changeGeneration = (generation) => {
         axios.get(generation.url).then((res) => {
             let pokemons = res.data.pokemon_species;
             setPokemonList(pokemons);
             setPokemonSaveList(pokemons);
+            setCurrentPokemon({});
         });
     }
 

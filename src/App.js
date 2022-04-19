@@ -27,7 +27,7 @@ const App = () => {
   return (
     <div className='main'>
       <div className="header">
-        <GenerationList generationList={generationList} setPokemonList={setPokemonList} setPokemonSaveList={setPokemonSaveList} />
+        <GenerationList generationList={generationList} setPokemonList={setPokemonList} setPokemonSaveList={setPokemonSaveList} setCurrentPokemon={setCurrentPokemon} />
       </div>
       <div className="body">
         <div className='detail'>
